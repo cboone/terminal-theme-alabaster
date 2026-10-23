@@ -7,6 +7,7 @@ Terminal color schemes for Alabaster Dark and Alabaster Light themes.
 | Terminal | Directory | Files |
 |----------|-----------|-------|
 | [Alacritty](https://alacritty.org/) | `alacritty/` | `.toml` |
+| [Blink Shell](https://blink.sh/) | `blink/` | `.js` |
 | [Contour](https://contour-terminal.org/) | `contour/` | `.yml` |
 | [foot](https://codeberg.org/dnkl/foot) | `foot/` | `.ini` |
 | [Ghostty](https://ghostty.org/) | `ghostty/` | (no extension) |

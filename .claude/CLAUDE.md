@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This repository contains terminal color themes for **Alabaster Dark** and **Alabaster Light**, adapted for 14 different terminal emulators. This is a static assets repository with no build system, tests, or runtime code.
+This repository contains terminal color themes for **Alabaster Dark** and **Alabaster Light**, adapted for 15 different terminal emulators. This is a static assets repository with no build system, tests, or runtime code.
 
 The themes follow the Alabaster philosophy of minimal, intentional syntax highlighting, adapted for the 16 ANSI color constraints of terminal emulators.
 
