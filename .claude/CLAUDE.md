@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This repository contains terminal color themes for **Alabaster Dark** and **Alabaster Light**, adapted for 15 different terminal emulators. This is a static assets repository with no build system, tests, or runtime code.
+This repository contains terminal color themes for **Alabaster Dark** and **Alabaster Light**, adapted for 15 different terminal emulators. This repository is mostly static theme files, except that the Blink Shell themes in `themes/blink/` are small JavaScript files checked by `tests/blink-themes.test.mjs` with Node's built-in test runner (`node --test tests/blink-themes.test.mjs`). There is no build system or package manifest.
 
 The themes follow the Alabaster philosophy of minimal, intentional syntax highlighting, adapted for the 16 ANSI color constraints of terminal emulators.
 

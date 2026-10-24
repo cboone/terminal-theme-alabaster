@@ -29,11 +29,11 @@ A new or changed theme applies only to tabs opened after it is selected.
 - `Alabaster-Light.js` - Light theme
 - `Alabaster-System.js` - Dark or Light, following the device appearance
 
-## Alabaster System (untested)
+## Alabaster System
 
-Blink applies one theme to every tab, with no light or dark variant. `Alabaster-System.js` selects Dark when the web view's `prefers-color-scheme` query matches dark, otherwise Light. It re-applies the palette when the query changes, so an open tab may follow appearance changes. If the query can't be read, it selects Dark.
+Blink applies one theme to every tab, with no light or dark variant. `Alabaster-System.js` selects Dark when the web view's `prefers-color-scheme` query matches dark, otherwise Light. It re-applies the palette when the query changes, so an open tab follows appearance changes. If the query can't be read, it selects Dark.
 
-This theme has not been tested on a device. Whether Blink's web view reports device appearance or open tabs follow appearance changes is unknown.
+This theme was tested on an iPhone in Blink Shell, and open tabs follow the device's light or dark appearance as it changes.
 
 ## Checking
 
