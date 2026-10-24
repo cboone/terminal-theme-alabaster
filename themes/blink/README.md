@@ -37,7 +37,7 @@ This theme was tested on an iPhone in Blink Shell, and open tabs follow the devi
 
 ## Checking
 
-`tests/blink-themes.test.mjs` checks these files' colors against the Ghostty and Kitty themes. It also runs each theme against stubbed terminal settings, and `Alabaster-System.js` against each appearance and a missing `matchMedia`. It needs only Node.js. From the repository root:
+`tests/blink-themes.test.mjs` checks these files' colors against the palette source, `scripts/terminal-app/palette.json`. It also runs each theme against stubbed terminal settings, and `Alabaster-System.js` against each appearance and a missing `matchMedia`. It needs only Node.js. From the repository root:
 
 ```bash
 node --test tests/blink-themes.test.mjs

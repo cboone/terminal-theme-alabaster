@@ -1,15 +1,15 @@
 # Alabaster Dark theme for WezTerm
 
 [colors]
-ansi = ['#202020', '#ff7171', '#C3E88D', '#ffb45e', '#5f9dff', '#C792EA', '#89DDFF', '#e7e7e7']
-brights = ['#474747', '#FF5370', '#C3E88D', '#FFCB6B', '#82AAFF', '#C792EA', '#89DDFF', '#ffffff']
-background = '#202020'
-foreground = '#e7e7e7'
-cursor_bg = '#e7e7e7'
-cursor_border = '#e7e7e7'
-cursor_fg = '#202020'
-selection_bg = '#5f9dff'
-selection_fg = '#e7e7e7'
+ansi = ['#2b2b2b', '#ff8884', '#cdea9e', '#ffc171', '#71b0ff', '#d2a7ee', '#98e3ff', '#ececec']
+brights = ['#777777', '#ff8a8a', '#d5f0a2', '#ffc880', '#85b5ff', '#d9b3f0', '#b0e8ff', '#ffffff']
+background = '#2b2b2b'
+foreground = '#ececec'
+cursor_bg = '#ececec'
+cursor_border = '#ececec'
+cursor_fg = '#2b2b2b'
+selection_bg = '#71b0ff'
+selection_fg = '#ececec'
 
 [colors.indexed]
 

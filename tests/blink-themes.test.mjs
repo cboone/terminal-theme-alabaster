@@ -1,26 +1,11 @@
-// Checks the Blink themes' colors against Ghostty and Kitty, and their behavior with stubbed hterm prefs and matchMedia.
+// Checks the Blink themes' palettes against the palette source, with stubbed hterm prefs and matchMedia.
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import vm from 'node:vm';
+import { palette as expected } from './palette.mjs';
 
 const read = (path) => readFileSync(new URL(`../${path}`, import.meta.url), 'utf8');
-
-function parse(text, ansiPattern, keyPattern, cursorKey) {
-  const ansi = [];
-  for (const m of text.matchAll(ansiPattern)) ansi[Number(m[1])] = m[2].toLowerCase();
-  const values = {};
-  for (const m of text.matchAll(keyPattern)) values[m[1]] = m[2].toLowerCase();
-  return { ansi, foreground: values.foreground, background: values.background, cursor: values[cursorKey] };
-}
-
-const ghostty = (variant) =>
-  parse(read(`themes/ghostty/Alabaster-${variant}`), /^palette = (\d+)=(#\w+)/gm, /^([\w-]+) = (#\w+)/gm,
-    'cursor-color');
-const kitty = (variant) =>
-  parse(read(`themes/kitty/Alabaster-${variant}.conf`), /^color(\d+)\s+(#\w+)/gm, /^(\w+)\s+(#\w+)/gm, 'cursor');
-
-const expected = { dark: ghostty('Dark'), light: ghostty('Light') };
 
 function run(file, media, { listener = true } = {}) {
   const prefs = {};
@@ -61,11 +46,6 @@ function assertPalette(prefs, palette) {
   assert.equal(prefs['background-color'].toLowerCase(), palette.background);
   assert.equal(prefs['cursor-color'].toLowerCase(), palette.cursor);
 }
-
-test('Ghostty and Kitty files agree', () => {
-  assert.deepEqual(kitty('Dark'), expected.dark);
-  assert.deepEqual(kitty('Light'), expected.light);
-});
 
 test('Dark and Light themes set their palettes', () => {
   assertPalette(run('Alabaster-Dark.js', 'missing').prefs, expected.dark);

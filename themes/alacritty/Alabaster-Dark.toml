@@ -1,27 +1,25 @@
-colors:
-  # Default colors
-  primary:
-    background: '0x202020'
-    foreground: '0xe7e7e7'
+# Alabaster Dark theme for Alacritty
 
-  # Normal colors
-  normal:
-    black:   '0x202020'
-    red:     '0xff7171'
-    green:   '0xc3e88d'
-    yellow:  '0xffb45e'
-    blue:    '0x5f9dff'
-    magenta: '0xc792ea'
-    cyan:    '0x89ddff'
-    white:   '0xe7e7e7'
+[colors.primary]
+background = '0x2b2b2b'
+foreground = '0xececec'
 
-  # Bright colors
-  bright:
-    black:   '0x474747'
-    red:     '0xff5370'
-    green:   '0xc3e88d'
-    yellow:  '0xffcb6b'
-    blue:    '0x82aaff'
-    magenta: '0xc792ea'
-    cyan:    '0x89ddff'
-    white:   '0xffffff'
+[colors.normal]
+black   = '0x2b2b2b'
+red     = '0xff8884'
+green   = '0xcdea9e'
+yellow  = '0xffc171'
+blue    = '0x71b0ff'
+magenta = '0xd2a7ee'
+cyan    = '0x98e3ff'
+white   = '0xececec'
+
+[colors.bright]
+black   = '0x777777'
+red     = '0xff8a8a'
+green   = '0xd5f0a2'
+yellow  = '0xffc880'
+blue    = '0x85b5ff'
+magenta = '0xd9b3f0'
+cyan    = '0xb0e8ff'
+white   = '0xffffff'

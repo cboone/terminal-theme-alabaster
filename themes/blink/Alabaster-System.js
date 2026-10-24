@@ -5,24 +5,24 @@
   var palettes = {
     dark: {
       ansi: [
-        '#202020', '#ff7171', '#C3E88D', '#ffb45e',
-        '#5f9dff', '#C792EA', '#89DDFF', '#e7e7e7',
-        '#474747', '#FF5370', '#C3E88D', '#FFCB6B',
-        '#82AAFF', '#C792EA', '#89DDFF', '#ffffff'
+        '#2b2b2b', '#ff8884', '#cdea9e', '#ffc171',
+        '#71b0ff', '#d2a7ee', '#98e3ff', '#ececec',
+        '#777777', '#ff8a8a', '#d5f0a2', '#ffc880',
+        '#85b5ff', '#d9b3f0', '#b0e8ff', '#ffffff'
       ],
-      foreground: '#e7e7e7',
-      background: '#202020',
-      cursor: '#e7e7e7'
+      foreground: '#ececec',
+      background: '#2b2b2b',
+      cursor: '#ececec'
     },
     light: {
       ansi: [
-        '#000000', '#AA3731', '#448C27', '#9A6515',
-        '#325CC0', '#811abc', '#4078a0', '#f5f5f5',
-        '#777777', '#c04038', '#5da03a', '#b8860b',
-        '#4a78d0', '#9932cc', '#5090b0', '#ffffff'
+        '#000000', '#ba4b40', '#539a33', '#ab781a',
+        '#4073cc', '#9538c8', '#4f8bb0', '#f7f7f7',
+        '#8a8a8a', '#cd5648', '#6eac4a', '#c59707',
+        '#5b8ed9', '#ab50d6', '#61a1be', '#ffffff'
       ],
       foreground: '#000000',
-      background: '#f5f5f5',
+      background: '#f7f7f7',
       cursor: '#000000'
     }
   };

@@ -34,28 +34,34 @@ In the original IDE themes, Alabaster highlights only four syntax classes: strin
 
 See the README in each subdirectory for terminal-specific installation instructions.
 
+The tests in `tests/` check every theme's colors and file structure, and the palette tables in these docs, against `scripts/terminal-app/palette.json`. They also decode the Terminal.app profiles with AppKit. They need Node.js. The Terminal.app checks also need macOS. From the repository root:
+
+```bash
+node --test
+```
+
 ## Color Palette
 
 | ANSI | Color          | Dark                                                                        | Light                                                                       |
 | ---: | -------------- | --------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
-|    0 | Black          | ![#202020](https://placehold.co/20x20/202020/202020.png) `#202020`          | ![#000000](https://placehold.co/20x20/000000/000000.png) `#000000`          |
-|    1 | Red            | ![#ff7171](https://placehold.co/20x20/ff7171/ff7171.png) `#ff7171`          | ![#AA3731](https://placehold.co/20x20/AA3731/AA3731.png) `#AA3731`          |
-|    2 | Green          | ![#C3E88D](https://placehold.co/20x20/C3E88D/C3E88D.png) `#C3E88D`          | ![#448C27](https://placehold.co/20x20/448C27/448C27.png) `#448C27`          |
-|    3 | Yellow         | ![#ffb45e](https://placehold.co/20x20/ffb45e/ffb45e.png) `#ffb45e`          | ![#9A6515](https://placehold.co/20x20/9A6515/9A6515.png) `#9A6515`          |
-|    4 | Blue           | ![#5f9dff](https://placehold.co/20x20/5f9dff/5f9dff.png) `#5f9dff`          | ![#325CC0](https://placehold.co/20x20/325CC0/325CC0.png) `#325CC0`          |
-|    5 | Magenta        | ![#C792EA](https://placehold.co/20x20/C792EA/C792EA.png) `#C792EA`          | ![#811abc](https://placehold.co/20x20/811abc/811abc.png) `#811abc`          |
-|    6 | Cyan           | ![#89DDFF](https://placehold.co/20x20/89DDFF/89DDFF.png) `#89DDFF`          | ![#4078a0](https://placehold.co/20x20/4078a0/4078a0.png) `#4078a0`          |
-|    7 | White          | ![#e7e7e7](https://placehold.co/20x20/e7e7e7/e7e7e7.png) `#e7e7e7`          | ![#f5f5f5](https://placehold.co/20x20/f5f5f5/f5f5f5.png) `#f5f5f5`          |
-|    8 | Bright Black   | ![#777777](https://placehold.co/20x20/777777/777777.png) `#777777`          | ![#777777](https://placehold.co/20x20/777777/777777.png) `#777777`          |
-|    9 | Bright Red     | ![#ff8a8a](https://placehold.co/20x20/ff8a8a/ff8a8a.png) `#ff8a8a`          | ![#c04038](https://placehold.co/20x20/c04038/c04038.png) `#c04038`          |
-|   10 | Bright Green   | ![#d5f0a2](https://placehold.co/20x20/d5f0a2/d5f0a2.png) `#d5f0a2`          | ![#5da03a](https://placehold.co/20x20/5da03a/5da03a.png) `#5da03a`          |
-|   11 | Bright Yellow  | ![#ffc880](https://placehold.co/20x20/ffc880/ffc880.png) `#ffc880`          | ![#b8860b](https://placehold.co/20x20/b8860b/b8860b.png) `#b8860b`          |
-|   12 | Bright Blue    | ![#85b5ff](https://placehold.co/20x20/85b5ff/85b5ff.png) `#85b5ff`          | ![#4a78d0](https://placehold.co/20x20/4a78d0/4a78d0.png) `#4a78d0`          |
-|   13 | Bright Magenta | ![#d9b3f0](https://placehold.co/20x20/d9b3f0/d9b3f0.png) `#d9b3f0`          | ![#9932cc](https://placehold.co/20x20/9932cc/9932cc.png) `#9932cc`          |
-|   14 | Bright Cyan    | ![#b0e8ff](https://placehold.co/20x20/b0e8ff/b0e8ff.png) `#b0e8ff`          | ![#5090b0](https://placehold.co/20x20/5090b0/5090b0.png) `#5090b0`          |
+|    0 | Black          | ![#2b2b2b](https://placehold.co/20x20/2b2b2b/2b2b2b.png) `#2b2b2b`          | ![#000000](https://placehold.co/20x20/000000/000000.png) `#000000`          |
+|    1 | Red            | ![#ff8884](https://placehold.co/20x20/ff8884/ff8884.png) `#ff8884`          | ![#ba4b40](https://placehold.co/20x20/ba4b40/ba4b40.png) `#ba4b40`          |
+|    2 | Green          | ![#cdea9e](https://placehold.co/20x20/cdea9e/cdea9e.png) `#cdea9e`          | ![#539a33](https://placehold.co/20x20/539a33/539a33.png) `#539a33`          |
+|    3 | Yellow         | ![#ffc171](https://placehold.co/20x20/ffc171/ffc171.png) `#ffc171`          | ![#ab781a](https://placehold.co/20x20/ab781a/ab781a.png) `#ab781a`          |
+|    4 | Blue           | ![#71b0ff](https://placehold.co/20x20/71b0ff/71b0ff.png) `#71b0ff`          | ![#4073cc](https://placehold.co/20x20/4073cc/4073cc.png) `#4073cc`          |
+|    5 | Magenta        | ![#d2a7ee](https://placehold.co/20x20/d2a7ee/d2a7ee.png) `#d2a7ee`          | ![#9538c8](https://placehold.co/20x20/9538c8/9538c8.png) `#9538c8`          |
+|    6 | Cyan           | ![#98e3ff](https://placehold.co/20x20/98e3ff/98e3ff.png) `#98e3ff`          | ![#4f8bb0](https://placehold.co/20x20/4f8bb0/4f8bb0.png) `#4f8bb0`          |
+|    7 | White          | ![#ececec](https://placehold.co/20x20/ececec/ececec.png) `#ececec`          | ![#f7f7f7](https://placehold.co/20x20/f7f7f7/f7f7f7.png) `#f7f7f7`          |
+|    8 | Bright Black   | ![#777777](https://placehold.co/20x20/777777/777777.png) `#777777`          | ![#8a8a8a](https://placehold.co/20x20/8a8a8a/8a8a8a.png) `#8a8a8a`          |
+|    9 | Bright Red     | ![#ff8a8a](https://placehold.co/20x20/ff8a8a/ff8a8a.png) `#ff8a8a`          | ![#cd5648](https://placehold.co/20x20/cd5648/cd5648.png) `#cd5648`          |
+|   10 | Bright Green   | ![#d5f0a2](https://placehold.co/20x20/d5f0a2/d5f0a2.png) `#d5f0a2`          | ![#6eac4a](https://placehold.co/20x20/6eac4a/6eac4a.png) `#6eac4a`          |
+|   11 | Bright Yellow  | ![#ffc880](https://placehold.co/20x20/ffc880/ffc880.png) `#ffc880`          | ![#c59707](https://placehold.co/20x20/c59707/c59707.png) `#c59707`          |
+|   12 | Bright Blue    | ![#85b5ff](https://placehold.co/20x20/85b5ff/85b5ff.png) `#85b5ff`          | ![#5b8ed9](https://placehold.co/20x20/5b8ed9/5b8ed9.png) `#5b8ed9`          |
+|   13 | Bright Magenta | ![#d9b3f0](https://placehold.co/20x20/d9b3f0/d9b3f0.png) `#d9b3f0`          | ![#ab50d6](https://placehold.co/20x20/ab50d6/ab50d6.png) `#ab50d6`          |
+|   14 | Bright Cyan    | ![#b0e8ff](https://placehold.co/20x20/b0e8ff/b0e8ff.png) `#b0e8ff`          | ![#61a1be](https://placehold.co/20x20/61a1be/61a1be.png) `#61a1be`          |
 |   15 | Bright White   | ![#ffffff](https://placehold.co/20x20/ffffff/ffffff.png) `#ffffff`          | ![#ffffff](https://placehold.co/20x20/ffffff/ffffff.png) `#ffffff`          |
-|    — | Background     | ![#202020](https://placehold.co/20x20/202020/202020.png) `#202020`          | ![#f5f5f5](https://placehold.co/20x20/f5f5f5/f5f5f5.png) `#f5f5f5`          |
-|    — | Foreground     | ![#e7e7e7](https://placehold.co/20x20/e7e7e7/e7e7e7.png) `#e7e7e7`          | ![#000000](https://placehold.co/20x20/000000/000000.png) `#000000`          |
+|    — | Background     | ![#2b2b2b](https://placehold.co/20x20/2b2b2b/2b2b2b.png) `#2b2b2b`          | ![#f7f7f7](https://placehold.co/20x20/f7f7f7/f7f7f7.png) `#f7f7f7`          |
+|    — | Foreground     | ![#ececec](https://placehold.co/20x20/ececec/ececec.png) `#ececec`          | ![#000000](https://placehold.co/20x20/000000/000000.png) `#000000`          |
 
 ## Related Themes
 
