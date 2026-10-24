@@ -1,10 +1,10 @@
 // Alabaster Dark theme for Blink Shell
 t.prefs_.set('color-palette-overrides', [
-  '#202020', '#ff7171', '#C3E88D', '#ffb45e',
-  '#5f9dff', '#C792EA', '#89DDFF', '#e7e7e7',
-  '#474747', '#FF5370', '#C3E88D', '#FFCB6B',
-  '#82AAFF', '#C792EA', '#89DDFF', '#ffffff'
+  '#2b2b2b', '#ff8884', '#cdea9e', '#ffc171',
+  '#71b0ff', '#d2a7ee', '#98e3ff', '#ececec',
+  '#777777', '#ff8a8a', '#d5f0a2', '#ffc880',
+  '#85b5ff', '#d9b3f0', '#b0e8ff', '#ffffff'
 ]);
-t.prefs_.set('foreground-color', '#e7e7e7');
-t.prefs_.set('background-color', '#202020');
-t.prefs_.set('cursor-color', '#e7e7e7');
+t.prefs_.set('foreground-color', '#ececec');
+t.prefs_.set('background-color', '#2b2b2b');
+t.prefs_.set('cursor-color', '#ececec');

@@ -1,25 +1,25 @@
 # Alabaster Light theme for Alacritty
 
 [colors.primary]
-background = '0xf5f5f5'
+background = '0xf7f7f7'
 foreground = '0x000000'
 
 [colors.normal]
 black   = '0x000000'
-red     = '0xaa3731'
-green   = '0x448c27'
-yellow  = '0x9a6515'
-blue    = '0x325cc0'
-magenta = '0x811abc'
-cyan    = '0x4078a0'
-white   = '0xf5f5f5'
+red     = '0xba4b40'
+green   = '0x539a33'
+yellow  = '0xab781a'
+blue    = '0x4073cc'
+magenta = '0x9538c8'
+cyan    = '0x4f8bb0'
+white   = '0xf7f7f7'
 
 [colors.bright]
-black   = '0x777777'
-red     = '0xc04038'
-green   = '0x5da03a'
-yellow  = '0xb8860b'
-blue    = '0x4a78d0'
-magenta = '0x9932cc'
-cyan    = '0x5090b0'
+black   = '0x8a8a8a'
+red     = '0xcd5648'
+green   = '0x6eac4a'
+yellow  = '0xc59707'
+blue    = '0x5b8ed9'
+magenta = '0xab50d6'
+cyan    = '0x61a1be'
 white   = '0xffffff'
