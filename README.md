@@ -1,6 +1,6 @@
 # Alabaster Color Themes for Terminals
 
-Terminal color themes for Alabaster Dark and Alabaster Light, available for 14 different terminal emulators.
+Terminal color themes for Alabaster Dark and Alabaster Light, available for 15 different terminal emulators.
 
 ## Background
 
@@ -17,6 +17,7 @@ In the original IDE themes, Alabaster highlights only four syntax classes: strin
 | Terminal                                                             | Directory                                              | Format         |
 | -------------------------------------------------------------------- | ------------------------------------------------------ | -------------- |
 | [Alacritty](https://alacritty.org/)                                  | [`themes/alacritty/`](themes/alacritty/)               | `.toml`        |
+| [Blink Shell](https://blink.sh/)                                     | [`themes/blink/`](themes/blink/)                       | `.js`          |
 | [Contour](https://contour-terminal.org/)                             | [`themes/contour/`](themes/contour/)                   | `.yml`         |
 | [foot](https://codeberg.org/dnkl/foot)                               | [`themes/foot/`](themes/foot/)                         | `.ini`         |
 | [Ghostty](https://ghostty.org/)                                      | [`themes/ghostty/`](themes/ghostty/)                   | (no extension) |
