@@ -21,24 +21,24 @@ When modifying or adding themes, use these canonical hex values:
 
 | ANSI | Color          | Dark      | Light     |
 | ---: | -------------- | --------- | --------- |
-|    0 | Black          | `#202020` | `#000000` |
-|    1 | Red            | `#ff7171` | `#AA3731` |
-|    2 | Green          | `#C3E88D` | `#448C27` |
-|    3 | Yellow         | `#ffb45e` | `#9A6515` |
-|    4 | Blue           | `#5f9dff` | `#325CC0` |
-|    5 | Magenta        | `#C792EA` | `#811abc` |
-|    6 | Cyan           | `#89DDFF` | `#4078a0` |
-|    7 | White          | `#e7e7e7` | `#f5f5f5` |
-|    8 | Bright Black   | `#777777` | `#777777` |
-|    9 | Bright Red     | `#ff8a8a` | `#c04038` |
-|   10 | Bright Green   | `#d5f0a2` | `#5da03a` |
-|   11 | Bright Yellow  | `#ffc880` | `#b8860b` |
-|   12 | Bright Blue    | `#85b5ff` | `#4a78d0` |
-|   13 | Bright Magenta | `#d9b3f0` | `#9932cc` |
-|   14 | Bright Cyan    | `#b0e8ff` | `#5090b0` |
+|    0 | Black          | `#2b2b2b` | `#000000` |
+|    1 | Red            | `#ff8884` | `#ba4b40` |
+|    2 | Green          | `#cdea9e` | `#539a33` |
+|    3 | Yellow         | `#ffc171` | `#ab781a` |
+|    4 | Blue           | `#71b0ff` | `#4073cc` |
+|    5 | Magenta        | `#d2a7ee` | `#9538c8` |
+|    6 | Cyan           | `#98e3ff` | `#4f8bb0` |
+|    7 | White          | `#ececec` | `#f7f7f7` |
+|    8 | Bright Black   | `#777777` | `#8a8a8a` |
+|    9 | Bright Red     | `#ff8a8a` | `#cd5648` |
+|   10 | Bright Green   | `#d5f0a2` | `#6eac4a` |
+|   11 | Bright Yellow  | `#ffc880` | `#c59707` |
+|   12 | Bright Blue    | `#85b5ff` | `#5b8ed9` |
+|   13 | Bright Magenta | `#d9b3f0` | `#ab50d6` |
+|   14 | Bright Cyan    | `#b0e8ff` | `#61a1be` |
 |   15 | Bright White   | `#ffffff` | `#ffffff` |
-|    — | Background     | `#202020` | `#f5f5f5` |
-|    — | Foreground     | `#e7e7e7` | `#000000` |
+|    — | Background     | `#2b2b2b` | `#f7f7f7` |
+|    — | Foreground     | `#ececec` | `#000000` |
 
 ## Adding a New Terminal
 
