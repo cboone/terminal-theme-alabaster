@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This repository contains terminal color themes for **Alabaster Dark** and **Alabaster Light**, adapted for 15 different terminal emulators. This repository is mostly static theme files, except that the Blink Shell themes in `themes/blink/` are small JavaScript files checked by `tests/blink-themes.test.mjs` with Node's built-in test runner (`node --test tests/blink-themes.test.mjs`). There is no build system or package manifest.
+This repository contains terminal color themes for **Alabaster Dark** and **Alabaster Light**, adapted for 15 different terminal emulators. The theme files are static, and the Terminal.app profiles are generated from `scripts/terminal-app/palette.json` by `scripts/terminal-app/generate.js` on macOS through `osascript`. The `node --test` command runs the tests in `tests/`, which check every theme and profile against the palette; there is no package manifest.
 
 The themes follow the Alabaster philosophy of minimal, intentional syntax highlighting, adapted for the 16 ANSI color constraints of terminal emulators.
 
@@ -44,6 +44,7 @@ When modifying or adding themes, use these canonical hex values:
 
 1. Create a new directory under `themes/` named after the terminal (lowercase, hyphenated)
 2. Add theme files in the terminal's native format (both Dark and Light variants)
-3. Add a `README.md` with installation instructions following the pattern of existing READMEs
-4. Update the supported terminals table in the root `README.md`
-5. Update the table in `themes/README.md`
+3. Add a parser for the new terminal's format to the `parsers` object in `tests/themes.test.mjs` so its colors are checked against the palette
+4. Add a `README.md` with installation instructions following the pattern of existing READMEs
+5. Update the supported terminals table in the root `README.md`
+6. Update the table in `themes/README.md`
